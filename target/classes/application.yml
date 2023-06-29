@@ -1,0 +1,32 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/study?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password: root
+  servlet:
+    multipart:
+      max-file-size: 100MB
+mybatis-plus:
+  type-aliases-package: com.study.pojo
+  mapper-locations: classpath:/mapper/*.xml
+logging:
+  level:
+    com.study.mapper: debug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
